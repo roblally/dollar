@@ -19,6 +19,7 @@ It turns out that, just as in javascript, $ is a valid Java identifier. In an ho
 
 Take an iterable or an iterator and wrap it in $(), you can now chain methods on it e.g.
 
+```java
 Iterable<Integer> input = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);
 
 Iterable<String> output =
@@ -35,6 +36,7 @@ $(stringInput)
         }
     })
     .asIterable()
+```
 
 To Do
 ======
