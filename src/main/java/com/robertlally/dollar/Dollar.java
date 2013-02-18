@@ -3,31 +3,6 @@ package com.robertlally.dollar;
 import java.util.*;
 import static com.robertlally.dollar.Predicate.Util.reverse;
 
-/*
-    sort
-    sortBy
-    groupBy
-    flatMap
-    takeWhile
-    takeUntil
-
-    slice
-    range
-    last
-
-    tee
-
-    as -> less common collections
-
-    generators
-
-    map operations
-
-    parallel versions
-
-    wrappers for streams, readers and other useful things
- */
-
 /**
  * Methods on this class are either pipelines or terminators.
  * <p/>
