@@ -22,20 +22,19 @@ Take an iterable or an iterator and wrap it in $(), you can now chain methods on
 ```java
 Iterable<Integer> input = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);
 
-Iterable<String> output =
-$(stringInput)
-    .filter(new Predicate<Integer>() {
-        public boolean apply(Integer i) {
-            return i < 5;
-        }
-    })
-    .unique()
-    .map(Fn<String, Integer>() {
-        public Integer apply(String s) {
-                return s.length();
-        }
-    })
-    .asIterable()
+Iterable<String> output = $(stringInput)
+                                .filter(new Predicate<Integer>() {
+                                    public boolean apply(Integer i) {
+                                        return i < 5;
+                                    }
+                                })
+                                .unique()
+                                .map(Fn<String, Integer>() {
+                                    public Integer apply(String s) {
+                                            return s.length();
+                                    }
+                                })
+                                .asIterable()
 ```
 
 To Do
